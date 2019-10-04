@@ -100,7 +100,8 @@ def mode(list)
 
 end
 
-# # puts mode([2, 3, 1, 2, 2, 3, 2]) # 2
+# puts mode([2, 3, 1, 2, 2, 3, 2]) # 2
+# puts mode([3, 5, 6, 6, 9, 7, 4, 6]) #6
 
 def is_increasing(list)
 
@@ -296,3 +297,14 @@ def merge_arrays(a, b)
 end
 
 # puts merge_arrays(a, b)
+
+# def g_happy(strg)
+#     count = 0
+#     index = 0
+
+#     list.each do |i|
+#         if 
+
+# end
+
+# puts 
