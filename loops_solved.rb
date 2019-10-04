@@ -304,7 +304,6 @@ end
 
 #     list.each do |i|
 #         if 
-
 # end
 
 # puts 
