@@ -188,15 +188,20 @@ end
 # puts get_sandwich("Breadapplejambread")# applejam
 # puts get_sandwich("peanutbreadhoney") #
 
-# def shift_left(list)
-#     overflow = 0
-#     point = 0
+def shift_left(list)
+    new_list = list
+    i = 0
+    first = list[0]
 
-#     list.size.times do |
+    list.size.times do
+        new_list[i] = list[i + 1]
+        i += 1
+    end
+    new_list[list.size - 1] = first
+    return new_list
+end
 
-# end
-
-# puts shift_left([1, 5, 3, 4])
+# puts shift_left([1, 5, 3, 4]) #5, 3, 4, 1
 
 def can_balance(list)
     if list.size > 0
@@ -298,12 +303,33 @@ end
 
 # puts merge_arrays(a, b)
 
-# def g_happy(strg)
-#     count = 0
-#     index = 0
+def g_happy(str)
+    i = 0
+    count = 0
+    str.size.times do |letter|
+        if str[letter] == "g"
+            if str[letter] != str[i + 1]
+                if str[letter] != str[i - 1]
+                    return false
+                end
+            end
+        else
+            count += 1
+        end
+        i += 1
+    end
+    if count == str.size
+        return false
+    else
+        return true
+    end
+end
 
-#     list.each do |i|
-#         if 
-# end
+# puts g_happy("happy") #false
+# puts g_happy("agga") #true
 
-# puts 
+def max_span()
+end
+
+# puts max_span()
+# puts max_span()
